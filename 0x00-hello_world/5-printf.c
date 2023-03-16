@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
- * main - is the main function of this prog
+ * main - print "with proper grammar, but the outcome is a piece of art,"
  * retunr - always 0
  */
 int main(void)
