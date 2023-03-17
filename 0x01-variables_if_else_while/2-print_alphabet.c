@@ -2,17 +2,20 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Entry point
+ * main - Entry the alphabet
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char low;
+	char alpha[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-	for (low = 'a'; low <= 'z'; low++)
-		putchar(low);
-		printf("\n");
+	for (i = 0; i < 26; i++)
+	{	
+		putchar(alpha[i]);
+	}
+	putchar('\n');
 
 	return (0);
 }
