@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 
-int chek_prime(int m, int j);
+
+int check_prime(int n, int i);
 
 /**
   * is_prime_number - Returns if a number is prime
@@ -11,7 +12,7 @@ int chek_prime(int m, int j);
   */
 int is_prime_number(int n)
 {
-	return (chek_prime(n, 1));
+	return (check_prime(n, 1));
 }
 
 /**
@@ -21,16 +22,16 @@ int is_prime_number(int n)
   *
   * Return: 1 for prime or 0 composite
   */
-int chek_prime(int m, int j)
+int check_prime(int n, int i)
 {
-	if (m <= 1)
+	if (n <= 1)
 		return (0);
 
-	if (m % j == 0 && j > 1)
+	if (n % i == 0 && i > 1)
 		return (0);
 
-	if ((m / j) < j)
+	if ((n / i) < i)
 		return (1);
 
-	return (chek_prime(m, j + 1));
+	return (check_prime(n, i + 1));
 }
